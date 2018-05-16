@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1168385185234368}
+  m_IsPrefabParent: 1
+--- !u!1 &1029146365051606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4011347451138118}
+  - component: {fileID: 33497947012154514}
+  - component: {fileID: 23708895655782308}
+  m_Layer: 4
+  m_Name: Water
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1168385185234368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4017607019162020}
+  - component: {fileID: 114274652012735552}
+  m_Layer: 0
+  m_Name: Terrains
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4011347451138118
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1029146365051606}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 100, y: 0, z: 300}
+  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_Children: []
+  m_Father: {fileID: 4017607019162020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4017607019162020
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168385185234368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4011347451138118}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23708895655782308
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1029146365051606}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c6230e5e93d27d946a8096f529ce6d06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33497947012154514
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1029146365051606}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114274652012735552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168385185234368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16939dbdf6762c41b2f057c3b3743f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heightOctaves: 4
+  heightFrequency: 0.02
+  mountValue: 20
+  deepValue: 400
+  heightDeep: -0.1
+  heightWater: 0.14
+  heightBeach: 0.175
+  heightGrass: 0.4
+  heightForest: 0.675
+  heightRock: 0.85
+  heatOctaves: 4
+  heatFrequency: 0.0025
+  coldest: 0.2
+  cold: 0.4
+  warm: 0.6
+  warmest: 0.8
+  moinstureOctaves: 3
+  moinstureFrequency: 0.025
+  dryest: 0.2
+  dry: 0.4
+  wet: 0.6
+  wetter: 0.75
+  textures:
+  - {fileID: 2800000, guid: 133875d374c6c4847b37f512ac8a8c0a, type: 3}
+  - {fileID: 2800000, guid: 94aba499c4781a74c933f6f764d45d3a, type: 3}
+  - {fileID: 2800000, guid: 309a0fee7f06ba7499ef534d51fc2702, type: 3}
+  - {fileID: 2800000, guid: 2c13e0fc6a60aa744adc8aa8ae308eab, type: 3}
+  - {fileID: 2800000, guid: 1100898e76fd36e4eb86bf20ba998071, type: 3}
+  - {fileID: 2800000, guid: bc5d0db79b50e494598f2b9c4d7e99c8, type: 3}
+  - {fileID: 2800000, guid: 0c385844850bf1843a9048677174a3b6, type: 3}
+  - {fileID: 2800000, guid: 003ef9488b4377940bb2d8511d2362db, type: 3}
+  - {fileID: 2800000, guid: 3a8195e9098eb0744a28f0a3f5373769, type: 3}
+  - {fileID: 2800000, guid: 4b07f6b7073bf224e817a1734980bfa5, type: 3}
+  - {fileID: 2800000, guid: 4b07f6b7073bf224e817a1734980bfa5, type: 3}
+  - {fileID: 2800000, guid: 4b07f6b7073bf224e817a1734980bfa5, type: 3}
+  - {fileID: 2800000, guid: 3b4e5508c83efdb44a810c1b22d80b2f, type: 3}
+  - {fileID: 2800000, guid: 19efec71d75da524cb983b41be85da4d, type: 3}
+  - {fileID: 2800000, guid: 9bb9a2f7846538943b431efc468a1fec, type: 3}
+  - {fileID: 2800000, guid: 7677856b200fee745bfc1e03dd7cb5c0, type: 3}
+  - {fileID: 2800000, guid: 83f048c85ab5e024b870f0c7813fcd6f, type: 3}
+  - {fileID: 2800000, guid: 7677856b200fee745bfc1e03dd7cb5c0, type: 3}
+  - {fileID: 2800000, guid: 7b99139faa5869b43b64401d462154ae, type: 3}
+  - {fileID: 2800000, guid: cce9293286022ec47b6d5c1181e9aaa4, type: 3}
+  - {fileID: 2800000, guid: 4e2678ec13f765144bd29e7b3161d2f0, type: 3}
+  - {fileID: 2800000, guid: 920c9436e6a27b248b4b241fed6e42e4, type: 3}
+  - {fileID: 2800000, guid: a9abb6aa26694904fb5815536c9d5e79, type: 3}
+  - {fileID: 2800000, guid: 920c9436e6a27b248b4b241fed6e42e4, type: 3}
+  - {fileID: 2800000, guid: 108b729a46da1984d8f77b95549adab8, type: 3}
+  - {fileID: 2800000, guid: cf1a76dcb01a6954cbf0df5e01cea285, type: 3}
+  - {fileID: 2800000, guid: 108b729a46da1984d8f77b95549adab8, type: 3}
+  - {fileID: 2800000, guid: 4aabf5d65648f7e459e647ee4097a952, type: 3}
+  - {fileID: 2800000, guid: dbd4f72f03f69ee4097ea7c21da0d18c, type: 3}
+  - {fileID: 2800000, guid: 4aabf5d65648f7e459e647ee4097a952, type: 3}
+  - {fileID: 2800000, guid: 4259f959829f0cd40a9cca4e7d852ae5, type: 3}
+  - {fileID: 2800000, guid: def95099f76af0249a89eb8e4b7f639b, type: 3}
+  - {fileID: 2800000, guid: 40fe31a3e2e9f294dbac6d9620b7afa9, type: 3}
+  prefChunk: {fileID: 114098765744716268, guid: a3c1a39bd243dd74fafe790334358cef,
+    type: 2}

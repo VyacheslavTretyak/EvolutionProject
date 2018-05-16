@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1769499410449868}
+  m_IsPrefabParent: 1
+--- !u!1 &1769499410449868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4318023048376182}
+  - component: {fileID: 114573925430615490}
+  m_Layer: 0
+  m_Name: Trees
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4318023048376182
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769499410449868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.3, y: -3.0647922, z: 90.18832}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114573925430615490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769499410449868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c726b5917b27c447958868a255cf5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeOctaves: 3
+  treeFrequency: 0.2
+  treeCelling: {x: 1, y: 1}
+  textures:
+  - {fileID: 2800000, guid: 4e2678ec13f765144bd29e7b3161d2f0, type: 3}
+  - {fileID: 2800000, guid: 676463eed506b17439c586bea69a5115, type: 3}
+  - {fileID: 2800000, guid: f5a53b2c664fca546ace4583f428e065, type: 3}
+  - {fileID: 2800000, guid: 9ee8b444ee64e0c4f9b19c6f01d67371, type: 3}
+  - {fileID: 2800000, guid: 108b729a46da1984d8f77b95549adab8, type: 3}
+  - {fileID: 2800000, guid: 108b729a46da1984d8f77b95549adab8, type: 3}
+  - {fileID: 2800000, guid: 4aabf5d65648f7e459e647ee4097a952, type: 3}
+  - {fileID: 2800000, guid: 6d845c01ed05ef243a05292c17f34bbb, type: 3}
+  - {fileID: 2800000, guid: 41ba62604266b534595b360d6ca5f8e6, type: 3}
+  - {fileID: 2800000, guid: d89530c39d50ee04b805a443315d92ef, type: 3}
+  prefChunk: {fileID: 114653804123774466, guid: 1f5cced5d15794441bf82ef1996ffcb3,
+    type: 2}
+  oak: 0.2
+  pine: 0.1
+  cactus: 0.02
+  acacia: 0.01
+  rainforest: 0.06
